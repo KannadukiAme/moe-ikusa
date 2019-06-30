@@ -1,0 +1,9 @@
+version: "3"
+services:
+  nginx:
+    image: nginx
+    volumes:
+      - /dist:/usr/share/nginx/html:ro
+    ports:
+      - "9000:80"
+    restart: always
