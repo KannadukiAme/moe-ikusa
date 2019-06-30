@@ -1,6 +1,6 @@
 {
-  "name": "moe-ikusa",
-  "version": "0.0.1",
+	"name": "moe-ikusa",
+	"version": "0.0.1",
 	"scripts": {
 		"build": "webpack --config webpack.config.js"
 	},
@@ -9,5 +9,8 @@
 		"typescript": "^3.5.2",
 		"webpack": "^4.35.0",
 		"webpack-cli": "^3.3.5"
+	},
+	"dependencies": {
+		"pixi.js": "^5.0.4"
 	}
 }
