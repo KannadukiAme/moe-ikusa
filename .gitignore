@@ -1,0 +1,4 @@
+node_modules
+
+# 构建目录
+dist
