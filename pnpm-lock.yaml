@@ -1,6 +1,9 @@
 dependencies:
+  normalize.css: 8.0.1
   pixi.js: 5.0.4
 devDependencies:
+  css-loader: 3.0.0_webpack@4.35.0
+  style-loader: 0.23.1
   ts-loader: 6.0.4_typescript@3.5.2
   typescript: 3.5.2
   webpack: 4.35.0_webpack@4.35.0
@@ -1052,6 +1055,37 @@ packages:
     resolution:
       integrity: sha1-OWz58xN/A+S45TLFj2mCVOAPgOw=
       tarball: crypto-browserify/download/crypto-browserify-3.12.0.tgz
+  /css-loader/3.0.0_webpack@4.35.0:
+    dependencies:
+      camelcase: 5.3.1
+      cssesc: 3.0.0
+      icss-utils: 4.1.1
+      loader-utils: 1.2.3
+      normalize-path: 3.0.0
+      postcss: 7.0.17
+      postcss-modules-extract-imports: 2.0.0
+      postcss-modules-local-by-default: 3.0.2
+      postcss-modules-scope: 2.1.0
+      postcss-modules-values: 3.0.0
+      postcss-value-parser: 4.0.0
+      schema-utils: 1.0.0
+      webpack: 4.35.0_webpack@4.35.0
+    dev: true
+    engines:
+      node: '>= 8.9.0'
+    peerDependencies:
+      webpack: ^4.0.0
+    resolution:
+      integrity: sha1-vdSKSSHu/t8fClUmZYWUTU5e/GM=
+      tarball: css-loader/download/css-loader-3.0.0.tgz
+  /cssesc/3.0.0:
+    dev: true
+    engines:
+      node: '>=4'
+    hasBin: true
+    resolution:
+      integrity: sha1-N3QZGZA7hoVl4cCep0dEXNGJg+4=
+      tarball: cssesc/download/cssesc-3.0.0.tgz
   /cyclist/0.2.2:
     dev: true
     resolution:
@@ -1648,6 +1682,15 @@ packages:
     resolution:
       integrity: sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
       tarball: https-browserify/download/https-browserify-1.0.0.tgz
+  /icss-utils/4.1.1:
+    dependencies:
+      postcss: 7.0.17
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha1-IRcLU3ie4nRHwvR91oMIFAP5pGc=
+      tarball: icss-utils/download/icss-utils-4.1.1.tgz
   /ieee754/1.1.13:
     dev: true
     resolution:
@@ -1676,6 +1719,11 @@ packages:
     resolution:
       integrity: sha1-khi5srkoojixPcT7a21XbyMUU+o=
       tarball: imurmurhash/download/imurmurhash-0.1.4.tgz
+  /indexes-of/1.0.1:
+    dev: true
+    resolution:
+      integrity: sha1-8w9xbI4r00bHtn0985FVZqfAVgc=
+      tarball: indexes-of/download/indexes-of-1.0.1.tgz
   /inflight/1.0.6:
     dependencies:
       once: 1.4.0
@@ -2289,6 +2337,11 @@ packages:
     resolution:
       integrity: sha1-Dc1p/yOhybEf0JeDFmRKA4ghamU=
       tarball: normalize-path/download/normalize-path-3.0.0.tgz
+  /normalize.css/8.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-m5iiCHOLnMJjTKrLxC0THJdIe/M=
+      tarball: normalize.css/download/normalize.css-8.0.1.tgz
   /npm-run-path/2.0.2:
     dependencies:
       path-key: 2.0.1
@@ -2564,6 +2617,72 @@ packages:
     resolution:
       integrity: sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
       tarball: posix-character-classes/download/posix-character-classes-0.1.1.tgz
+  /postcss-modules-extract-imports/2.0.0:
+    dependencies:
+      postcss: 7.0.17
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha1-gYcZoa4doyX5gyRGsBE27rSTzX4=
+      tarball: postcss-modules-extract-imports/download/postcss-modules-extract-imports-2.0.0.tgz
+  /postcss-modules-local-by-default/3.0.2:
+    dependencies:
+      icss-utils: 4.1.1
+      postcss: 7.0.17
+      postcss-selector-parser: 6.0.2
+      postcss-value-parser: 4.0.0
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha1-6KZWG+kUqvPAUodjd1JMqQ27eRU=
+      tarball: postcss-modules-local-by-default/download/postcss-modules-local-by-default-3.0.2.tgz
+  /postcss-modules-scope/2.1.0:
+    dependencies:
+      postcss: 7.0.17
+      postcss-selector-parser: 6.0.2
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha1-rT9b94VhFPb8q5AbBQLiorw51Os=
+      tarball: postcss-modules-scope/download/postcss-modules-scope-2.1.0.tgz
+  /postcss-modules-values/3.0.0:
+    dependencies:
+      icss-utils: 4.1.1
+      postcss: 7.0.17
+    dev: true
+    resolution:
+      integrity: sha1-W1AA1uuuKbQlUwG0o6VFdEI+fxA=
+      tarball: postcss-modules-values/download/postcss-modules-values-3.0.0.tgz
+  /postcss-selector-parser/6.0.2:
+    dependencies:
+      cssesc: 3.0.0
+      indexes-of: 1.0.1
+      uniq: 1.0.1
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-k0z3mdAWyDQRhZ4J3Oyt4BKG7Fw=
+      tarball: postcss-selector-parser/download/postcss-selector-parser-6.0.2.tgz
+  /postcss-value-parser/4.0.0:
+    dev: true
+    resolution:
+      integrity: sha1-mamD02X3sq2ND5uMMJSSbqtLk20=
+      tarball: postcss-value-parser/download/postcss-value-parser-4.0.0.tgz
+  /postcss/7.0.17:
+    dependencies:
+      chalk: 2.4.2
+      source-map: 0.6.1
+      supports-color: 6.1.0
+    dev: true
+    engines:
+      node: '>=6.0.0'
+    resolution:
+      integrity: sha1-TaG9/1Mi1KCsqrTYfz54JDa60x8=
+      tarball: postcss/download/postcss-7.0.17.tgz
   /process-nextick-args/2.0.1:
     dev: true
     resolution:
@@ -2971,7 +3090,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-dHIq8y6WFOnCh6jQu95IteLxomM=
-      tarball: source-map/download/source-map-0.6.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsource-map%2Fdownload%2Fsource-map-0.6.1.tgz
+      tarball: source-map/download/source-map-0.6.1.tgz
   /split-string/3.1.0:
     dependencies:
       extend-shallow: 3.0.2
@@ -3071,6 +3190,16 @@ packages:
     resolution:
       integrity: sha1-u0P/VZim6wXYm1n80SnJgzE2Br8=
       tarball: strip-eof/download/strip-eof-1.0.0.tgz
+  /style-loader/0.23.1:
+    dependencies:
+      loader-utils: 1.2.3
+      schema-utils: 1.0.0
+    dev: true
+    engines:
+      node: '>= 0.12.0'
+    resolution:
+      integrity: sha1-y5FUYG8+dxq2xKtjcCahBJF02SU=
+      tarball: style-loader/download/style-loader-0.23.1.tgz
   /supports-color/5.5.0:
     dependencies:
       has-flag: 3.0.0
@@ -3242,6 +3371,11 @@ packages:
     resolution:
       integrity: sha1-C2/nuDWuzaYcbqTU8CwUIh4QmEc=
       tarball: union-value/download/union-value-1.0.1.tgz
+  /uniq/1.0.1:
+    dev: true
+    resolution:
+      integrity: sha1-sxxa6CVIRKOoKBVBzisEuGWnNP8=
+      tarball: uniq/download/uniq-1.0.1.tgz
   /unique-filename/1.1.1:
     dependencies:
       unique-slug: 2.0.2
@@ -3482,7 +3616,10 @@ packages:
       integrity: sha1-C1YreUAW65ZRuYvTes82SqXW3IM=
       tarball: yargs/download/yargs-13.2.4.tgz
 specifiers:
+  css-loader: ^3.0.0
+  normalize.css: ^8.0.1
   pixi.js: ^5.0.4
+  style-loader: ^0.23.1
   ts-loader: ^6.0.4
   typescript: ^3.5.2
   webpack: ^4.35.0
