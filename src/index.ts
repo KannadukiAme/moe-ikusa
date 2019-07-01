@@ -1,20 +1,20 @@
 import * as PIXI from 'pixi.js'
 
-const app = new PIXI.Application({
+const app:PIXI.Application = new PIXI.Application({
   width: 800, height: 600, backgroundColor: 0x1099bb, resolution: window.devicePixelRatio || 1,
 });
 document.body.appendChild(app.view);
 
-const container = new PIXI.Container();
+const container:PIXI.Container = new PIXI.Container();
 
 app.stage.addChild(container);
 
 // Create a new texture
-const texture = PIXI.Texture.from('examples/assets/bunny.png');
+const texture = PIXI.Texture.from('homura_140920_0001.png');
 
 // Create a 5x5 grid of bunnies
 for (let i = 0; i < 25; i++) {
-  const bunny = new PIXI.Sprite(texture);
+  const bunny:PIXI.Sprite = new PIXI.Sprite(texture);
   bunny.anchor.set(0.5);
   bunny.x = (i % 5) * 40;
   bunny.y = Math.floor(i / 5) * 40;
