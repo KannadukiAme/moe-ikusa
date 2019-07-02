@@ -13,6 +13,7 @@ export default class MoeGame extends PIXI.Application {
 
     this.stage = this.menuStage
 
+    // 开始游戏
     this.menuStage.on('start', () => {
       this.switchStage(this.mapStage)
     })

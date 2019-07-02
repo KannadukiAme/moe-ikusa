@@ -9,33 +9,38 @@ export default class Menu extends PIXI.Container {
   constructor() {
     super()
 
-    this.initTitle()
     this.initMusume()
+    this.initTitle()
     this.initMenuButtons()
   }
 
   initTitle() {
-    this.titleText = new PIXI.Text('MOE-IKUSA', { fill: 0x000000 })
+    this.titleText = new PIXI.Text('萌・戦', { fill: 0xf588ca, fontSize: 80 })
 
-    this.titleText.position = new PIXI.Point(100, 10)
+    this.titleText.position = new PIXI.Point(180, 160)
 
     this.addChild(this.titleText)
   }
 
   initMusume() {
-    const girl: PIXI.Sprite = new PIXI.Sprite(PIXI.Texture.from('/girl.jpg'))
+    const girl: PIXI.Sprite = new PIXI.Sprite(PIXI.Texture.from('/madoka.jpg'))
 
-    girl.position = new PIXI.Point(500, 20)
-    girl.height = 243 * 3
-    girl.width = 112 * 3
+    girl.position = new PIXI.Point(0, 0)
 
     this.addChild(girl)
   }
 
   initMenuButtons() {
-    this.addChild(new Button('START', { w: 200, h: 50 }, { x: 200, y: 200 }, () => { this.emit('start') }))
-    this.addChild(new Button('CONTINUE', { w: 200, h: 50 }, { x: 200, y: 240 }, () => { }))
-    this.addChild(new Button('LOAD', { w: 200, h: 50 }, { x: 200, y: 280 }, () => { }))
-    this.addChild(new Button('SETTINGS', { w: 200, h: 50 }, { x: 200, y: 320 }, () => { }))
+    const beginPosition = {
+      x: 200,
+      y: 280
+    }
+
+    const lineHeight: number = 60
+
+    this.addChild(new Button('START', new PIXI.Point(beginPosition.x, beginPosition.y), () => { this.emit('start') }))
+    this.addChild(new Button('CONTINUE', new PIXI.Point(beginPosition.x, beginPosition.y + lineHeight), () => { }))
+    this.addChild(new Button('LOAD', new PIXI.Point(beginPosition.x, beginPosition.y + lineHeight * 2), () => { }))
+    this.addChild(new Button('SETTINGS', new PIXI.Point(beginPosition.x, beginPosition.y + lineHeight * 3), () => { }))
   }
 }

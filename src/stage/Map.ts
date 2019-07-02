@@ -6,6 +6,6 @@ export default class Map extends PIXI.Container {
   constructor() {
     super()
 
-    this.addChild(new Button('正在游戏', { w: 200, h: 50 }, { x: 200, y: 200 }, () => { }))
+    this.addChild(new Button('正在游戏', new PIXI.Point(200, 200), () => { }))
   }
 }
