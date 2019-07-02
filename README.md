@@ -17,7 +17,7 @@ docker-compose up -d
 
 ## TODO
 
-- [] Game Menu Page
-- [] Game Map Page
-- [] Game Save/Load Page
-- [] Game Battle Page
+- [x] Game Menu Page
+- [ ] Game Map Page
+- [ ] Game Save/Load Page
+- [ ] Game Battle Page
