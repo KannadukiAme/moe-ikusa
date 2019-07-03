@@ -2,6 +2,10 @@ import * as PIXI from 'pixi.js'
 
 import Button from '../ui/Button'
 
+import '../interface'
+
+import * as musume from '../assets/img/madoka.jpg'
+
 export default class Menu extends PIXI.Container {
 
   titleText: PIXI.Text
@@ -23,7 +27,7 @@ export default class Menu extends PIXI.Container {
   }
 
   initMusume() {
-    const girl: PIXI.Sprite = new PIXI.Sprite(PIXI.Texture.from('/madoka.jpg'))
+    const girl: PIXI.Sprite = new PIXI.Sprite(PIXI.Texture.from(musume))
 
     girl.position = new PIXI.Point(0, 0)
 

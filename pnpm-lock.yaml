@@ -3,6 +3,7 @@ dependencies:
   pixi.js: 5.0.4
 devDependencies:
   css-loader: 3.0.0_webpack@4.35.0
+  file-loader: 4.0.0_webpack@4.35.0
   style-loader: 0.23.1
   ts-loader: 6.0.4_typescript@3.5.2
   typescript: 3.5.2
@@ -1390,6 +1391,19 @@ packages:
     resolution:
       integrity: sha1-hiRwESkBxyeg5JWoB0S9W6odZ5A=
       tarball: figgy-pudding/download/figgy-pudding-3.5.1.tgz
+  /file-loader/4.0.0_webpack@4.35.0:
+    dependencies:
+      loader-utils: 1.2.3
+      schema-utils: 1.0.0
+      webpack: 4.35.0_webpack@4.35.0
+    dev: true
+    engines:
+      node: '>= 8.9.0'
+    peerDependencies:
+      webpack: ^4.0.0
+    resolution:
+      integrity: sha1-w1cHg/77bhvAl4qFb0v1gluWbCo=
+      tarball: file-loader/download/file-loader-4.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffile-loader%2Fdownload%2Ffile-loader-4.0.0.tgz
   /fill-range/4.0.0:
     dependencies:
       extend-shallow: 2.0.1
@@ -2203,7 +2217,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
-      tarball: minimist/download/minimist-1.2.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fminimist%2Fdownload%2Fminimist-1.2.0.tgz
+      tarball: minimist/download/minimist-1.2.0.tgz
   /mississippi/3.0.0:
     dependencies:
       concat-stream: 1.6.2
@@ -2757,7 +2771,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha1-tYsBCsQMIsVldhbI0sLALHv0eew=
-      tarball: punycode/download/punycode-2.1.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpunycode%2Fdownload%2Fpunycode-2.1.1.tgz
+      tarball: punycode/download/punycode-2.1.1.tgz
   /querystring-es3/0.2.1:
     dev: true
     engines:
@@ -3617,6 +3631,7 @@ packages:
       tarball: yargs/download/yargs-13.2.4.tgz
 specifiers:
   css-loader: ^3.0.0
+  file-loader: ^4.0.0
   normalize.css: ^8.0.1
   pixi.js: ^5.0.4
   style-loader: ^0.23.1
