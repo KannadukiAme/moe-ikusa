@@ -1,4 +1,5 @@
-declare module "*.jpg" {
-  const value: any;
-  export = value;
+export interface CityInfo {
+  name:string,
+  type:string,
+  position:Array<number>
 }

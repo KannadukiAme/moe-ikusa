@@ -2,7 +2,7 @@ import * as PIXI from 'pixi.js'
 
 import Button from '../ui/Button'
 
-import '../interface'
+import '../declare'
 
 import * as musume from '../assets/img/madoka.jpg'
 

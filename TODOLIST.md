@@ -1,6 +1,6 @@
 # TODOLIST
 
-- [ ] Webpack copy assets and clean build
+- [x] Webpack copy assets and clean build
 - [ ] TSLint
 - [ ] Unit Test
 - [ ] git commit hook
