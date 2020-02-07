@@ -1,18 +1,18 @@
 # moe-ikusa
 
-> ...
+> 萌・戦
 
 ## Usage
 
 ```bash
 # install
-pnpm i
+yarn
 
 # build
-pnpm run build
+yarn build
 
 # view in http://localhost:9000
-docker-compose up -d
+yarn dev
 ```
 
 ## TODO
