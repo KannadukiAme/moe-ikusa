@@ -4,7 +4,7 @@ import Button from '../ui/Button'
 
 import '../declare'
 
-import * as musume from '../assets/img/madoka.jpg'
+import musume from '../assets/img/madoka.jpg'
 
 export default class Menu extends PIXI.Container {
 

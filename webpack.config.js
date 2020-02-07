@@ -1,8 +1,17 @@
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.ts',
+  devtool: 'inline-source-map',
+  entry: {
+    main: ['./src/index.ts']
+  },
+  devServer: {
+    open: true,
+    contentBase: path.join(__dirname, 'dist'),
+    port: 9000
+  },
   module: {
     rules: [
       {
@@ -27,6 +36,11 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  }
+    path: path.join(__dirname, 'dist')
+  },
+  plugins: [
+    new CopyPlugin([
+      { from: 'static', to: '' },
+    ]),
+  ],
 };
